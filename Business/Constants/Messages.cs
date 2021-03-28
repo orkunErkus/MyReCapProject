@@ -43,7 +43,7 @@
         public static string SuccessfulLogin = "Giriş başarılı.";
         public static string PasswordError = "Hatalı parola.";
         public static string UserAlreadyExists = "Kullanıcı zaten bulunmaktadır.";
-        public static string AccessTokenCreated = "Yetkilendime anahtarı oluşturuldu.";
+        public static string AccessTokenCreated = "Access Token Oluşturuldu";
 
         public static string PaymentFailed = "Payment failed.";
         public static string PaymentSuccessful = "Payment Successful.";

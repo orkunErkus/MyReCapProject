@@ -23,6 +23,13 @@ namespace WebAPI.Controllers
 
             return BadRequest(result);
         }
+        public IActionResult Add(User user)
+        {
+            var result = _userService.Add(user);
+            if (result.Success) return Ok(result);
+
+            return BadRequest(result);
+        }
 
         [HttpGet("getall")]
         public IActionResult GetAll()

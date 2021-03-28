@@ -33,14 +33,14 @@ namespace Business.Concrete
             return new SuccessResult(Messages.UserAdded);
         }
 
-        [SecuredOperation("user.update,moderator,admin")]
+        [SecuredOperation("user,moderator,admin")]
         public IResult Update(User user)
         {
             _userDal.Update(user);
             return new SuccessResult(Messages.UserUpdated);
         }
 
-        [SecuredOperation("user.delete,moderator,admin")]
+        [SecuredOperation("user,moderator,admin")]
         public IResult Delete(User user)
         {
             _userDal.Delete(user);
